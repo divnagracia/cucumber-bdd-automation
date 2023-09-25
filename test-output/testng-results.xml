@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-24T01:29:32 PST" name="Default suite" finished-at="2023-09-24T01:29:38 PST" duration-ms="5866">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-24T01:29:32 PST" name="Default test" finished-at="2023-09-24T01:29:38 PST" duration-ms="5866">
+      <class name="testRunner.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:32 PST" name="setUpClass" finished-at="2023-09-24T01:29:33 PST" duration-ms="534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a50d04a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:33 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T01:29:37 PST" duration-ms="4229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login into the application with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:37 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T01:29:38 PST" duration-ms="312" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add to Cart Item/s"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Products"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at stepDefinitions.InventoryPage_StepDefinition.name2_has_remove_button(InventoryPage_StepDefinition.java:37)
+at ✽.Sauce Labs Bike Light has remove button(file:///C:/Users/DIVINA/eclipse-workspace/Cucumber-BDD-TestNG-Automation/src/test/java/features/products.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:38 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T01:29:38 PST" duration-ms="317" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add to Cart Item/s"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Products"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at stepDefinitions.InventoryPage_StepDefinition.name2_has_remove_button(InventoryPage_StepDefinition.java:37)
+at ✽.Sauce Labs Onesie has remove button(file:///C:/Users/DIVINA/eclipse-workspace/Cucumber-BDD-TestNG-Automation/src/test/java/features/products.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:38 PST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T01:29:38 PST" duration-ms="353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add to Cart Item/s"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Products"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at stepDefinitions.InventoryPage_StepDefinition.name2_has_remove_button(InventoryPage_StepDefinition.java:37)
+at ✽.Test.allTheThings() T-Shirt (Red) has remove button(file:///C:/Users/DIVINA/eclipse-workspace/Cucumber-BDD-TestNG-Automation/src/test/java/features/products.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNGTestRunner@50378a4]" started-at="2023-09-24T01:29:38 PST" name="tearDownClass" finished-at="2023-09-24T01:29:38 PST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
