@@ -21,7 +21,7 @@ public class InventoryPage_StepDefinition {
 		this.testContextSetup=testContextSetup;
 		this.inventoryPage=testContextSetup.pageObjectManager.getInventoryPage();
 	}
-	@Given("^I am in Products List page$")
+	@Given("I am in Products List page")
 	public void i_am_in_products_list_page() {
 		Assert.assertEquals(inventoryPage.productsText.getText(),"Products");
 	}

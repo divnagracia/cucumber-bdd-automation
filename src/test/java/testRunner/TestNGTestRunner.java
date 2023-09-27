@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features={"src/test/java/features"},glue ={"stepDefinitions"}
-,monochrome=true, tags ="@Login or @Inventory",
+,monochrome=true, //tags ="@ShoppingCart",//@Login or @Inventory",
 plugin= { "pretty", "html:target/cucumber-reports/cucumber-pretty",
 		"json:target/cucumber-reports/CucumberTestReport.json",
 		"rerun:target/cucumber-reports/rerun.txt" })

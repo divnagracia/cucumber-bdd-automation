@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 public class Inventory_Page {
 
 	public WebDriver driver;
-	String dynamicItem;
 
 	public Inventory_Page(WebDriver driver) {
 		this.driver = driver;
@@ -36,4 +35,7 @@ public class Inventory_Page {
 				+ "']/following::button[@class = 'btn btn_secondary btn_small btn_inventory']")).isEnabled();
 	}
 	
+	public void clickShoppingCart() {
+		shoppingCartBadgeQuantity.click();
+	}
 }
