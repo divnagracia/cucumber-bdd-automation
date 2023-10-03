@@ -1,6 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,9 +17,7 @@ public class ShoppingCart_Page {
 
 	@FindBy(xpath = "//button[@id='checkout']")
 	public WebElement checkOutButton;
-	
-	@FindBy(xpath = "//span[contains(text(),'Checkout: Your Information')]")
-	public WebElement checkOutInformationText;
+
 
 	public void clickCheckOutButton() {
 		checkOutButton.click();

@@ -7,7 +7,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.Inventory_Page;
-import pageObjects.Login_Page;
 import utils.TestContextSetup;
 
 public class InventoryPage_StepDefinition {

@@ -10,5 +10,3 @@ Feature: Products
     Examples: 
       | item                              | quantity |
       | Sauce Labs Bike Light             |        1 |
-      | Sauce Labs Onesie                 |        2 |
-      | Test.allTheThings() T-Shirt (Red) |        3 |

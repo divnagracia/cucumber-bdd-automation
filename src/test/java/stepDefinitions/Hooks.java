@@ -34,15 +34,15 @@ public class Hooks {
 //
 //	}
 	
-	@Before
-	public void oneSession(Scenario scenario) throws IOException
-	{    
-		if(firstSession)
-		{	
-			testContextSetup.testBase.WebDriverManager();
-			firstSession = true;	
-		}	
-	}	
+//	@Before
+//	public void oneSession(Scenario scenario) throws IOException
+//	{    
+//		if(firstSession)
+//		{	
+//			testContextSetup.testBase.WebDriverManager();
+//			firstSession = true;	
+//		}	
+//	}	
 
 	@AfterStep
 	public void AddScreenshot(Scenario scenario) throws IOException {

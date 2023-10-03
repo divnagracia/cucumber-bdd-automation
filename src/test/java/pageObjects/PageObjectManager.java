@@ -1,7 +1,6 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 public class PageObjectManager {
 
@@ -10,9 +9,11 @@ public class PageObjectManager {
 	public Login_Page loginPage;
 	public Inventory_Page inventoryPage;
 	public ShoppingCart_Page shoppingCartPage;
+	public CheckOut_Page checkOutPage;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
+		//should I put PageFactory.initElements(driver, this); ?
 	}
 
 	public Login_Page getLoginPage() {
@@ -31,5 +32,10 @@ public class PageObjectManager {
 
 		shoppingCartPage = new ShoppingCart_Page(driver);
 		return shoppingCartPage;
+	}
+	public CheckOut_Page getCheckOutPage() {
+
+		checkOutPage = new CheckOut_Page(driver);
+		return checkOutPage;
 	}
 }
