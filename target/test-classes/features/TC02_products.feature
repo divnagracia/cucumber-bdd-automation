@@ -8,5 +8,6 @@ Feature: Products
     And <item> has remove button
 
     Examples: 
-      | item                              | quantity |
-      | Sauce Labs Bike Light             |        1 |
+      | item                  | quantity |
+      | Sauce Labs Bike Light |        1 |
+      | Sauce Labs Backpack   |        2 |

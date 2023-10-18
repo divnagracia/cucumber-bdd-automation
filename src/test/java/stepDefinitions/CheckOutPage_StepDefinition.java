@@ -46,8 +46,35 @@ public class CheckOutPage_StepDefinition {
 		checkOutPage.clickCheckOutButton();
 	}
 
-	@Then("redirected to Checkout Review page")
-	public void redirected_to_checkout_review_page() {
+	@Then("I am in Checkout Review page")
+	public void iam_in_checkout_review_page() {
 		Assert.assertEquals(checkOutPage.checkOutOverviewText.getText(), "Checkout: Overview");
 	}
+
+	@When("I verify the no. of item name, item description and price are displayed")
+	public void i_verify_the_item_name_item_description_and_item_price_are_equal_from_the_inventory_page() {
+		Assert.assertEquals(checkOutPage.verify_and_count_Item_Name(),2);
+	}
+
+	@And("verify item total is correct")
+	public void verify_item_total_is_correct() {
+		Assert.assertEquals("Item total: $"+checkOutPage.verifyTotalSumofPrice(),checkOutPage.itemTotalText.getText());
+		}
+
+	@And("verify the tax info and total info are available and correct")
+	public void verify_the_tax_info_and_total_info_are_available() {
+		Assert.assertEquals("Total: $"+checkOutPage.verify_overallTotal(),checkOutPage.totalText.getText());
+	}
+
+	@And("click Finish")
+	public void click_finish() {
+		checkOutPage.finishButton.isDisplayed();
+		checkOutPage.finishButton.click();
+	}
+
+	@Then("Checkout is complete with validation message displayed")
+	public void checkout_is_complete() {
+		Assert.assertTrue(checkOutPage.checkOutCompleteContainer.isDisplayed());
+	}
 }
+

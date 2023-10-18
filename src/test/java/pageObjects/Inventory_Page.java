@@ -26,13 +26,14 @@ public class Inventory_Page {
 	
 
 	public void addToCartItem(String item) {
-		driver.findElement(By.xpath("//div[@class = 'inventory_item_name' and text()='" + item
-				+ "']/following::button[@class = 'btn btn_primary btn_small btn_inventory']")).click();
+		driver.findElement(By.xpath("//div[@class = 'inventory_item_description']/div/a/div[text()='" + item
+				+ "']/ancestor::div[@class='inventory_item_description']/div[@class = 'pricebar']/button")).click();
 	}
+	
 
 	public boolean verifyRemoveButton(String item) {
-		return driver.findElement(By.xpath("//div[@class = 'inventory_item_name' and text()='" + item
-				+ "']/following::button[@class = 'btn btn_secondary btn_small btn_inventory']")).isEnabled();
+		return driver.findElement(By.xpath("//div[@class = 'inventory_item_description']/div/a/div[text()='" + item
+				+ "']/ancestor::div[@class='inventory_item_description']/div[@class = 'pricebar']/button[text()='Remove']")).isEnabled();
 	}
 	
 	public void clickShoppingCart() {

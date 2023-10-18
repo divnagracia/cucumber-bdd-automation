@@ -12,7 +12,6 @@ import utils.TestContextSetup;
 public class InventoryPage_StepDefinition {
 	
 	TestContextSetup testContextSetup;
-
 	Inventory_Page inventoryPage;
 
 	public InventoryPage_StepDefinition(TestContextSetup testContextSetup)

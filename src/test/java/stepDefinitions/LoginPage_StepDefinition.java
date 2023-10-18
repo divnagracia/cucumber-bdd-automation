@@ -24,7 +24,7 @@ public class LoginPage_StepDefinition {
 		this.inventoryPage=testContextSetup.pageObjectManager.getInventoryPage();
 	}
 
-	@Given("I am on the Login page")
+	@Given("I am in the Login page")
 	public void i_am_on_the_Login_page(){
      Assert.assertTrue(loginPage.getTitleLoginPage().contains("Swag Labs"));
 	}

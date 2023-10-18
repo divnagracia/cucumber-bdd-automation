@@ -3,12 +3,10 @@ package stepDefinitions;
 import org.testng.Assert;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.CheckOut_Page;
 import pageObjects.Inventory_Page;
-import pageObjects.Login_Page;
 import pageObjects.ShoppingCart_Page;
 import utils.TestContextSetup;
 

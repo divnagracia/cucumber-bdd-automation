@@ -18,7 +18,7 @@ import utils.TestBase;
 import utils.TestContextSetup;
 
 public class Hooks {
-	
+
 	static boolean firstSession = false;
 	TestContextSetup testContextSetup;
 
@@ -33,7 +33,7 @@ public class Hooks {
 //		testContextSetup.testBase.WebDriverManager().quit();
 //
 //	}
-	
+
 //	@Before
 //	public void oneSession(Scenario scenario) throws IOException
 //	{    
@@ -49,13 +49,9 @@ public class Hooks {
 		WebDriver driver = testContextSetup.testBase.WebDriverManager();
 		if (scenario.isFailed()) {
 			// screenshot
-			try {
-				File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-				byte[] fileContent = FileUtils.readFileToByteArray(sourcePath);
-				scenario.attach(fileContent, "image/png", "image");
-			} catch (WebDriverException e) {
-				e.printStackTrace();
-			}
+			File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			byte[] fileContent = FileUtils.readFileToByteArray(sourcePath);
+			scenario.attach(fileContent, "image/png", "image");
 
 		}
 
